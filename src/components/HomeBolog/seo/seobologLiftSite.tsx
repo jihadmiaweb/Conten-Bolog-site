@@ -66,7 +66,7 @@ function SeoBologeLiftSite() {
                             hover:shadow-2xl
                             hover:scale-[1.02]
                         "
-                        src="/imgas/Home-imgas/9.jpg"
+                        src="/imgas/Home-imgas/10.jpg"
                         alt="SEO, Search Engine Optimization"
                     />
                 </div>

@@ -30,6 +30,7 @@ import CreateWevSiteBolog from "@/components/AllBologPagass/createwevsitebolog/C
 import CreatewevsiteitemBolg from "@/components/AllBologPagass/createwevsiteitemBolg/createwevsiteitemBolg.tsx";
 import DomineNameBolog from "@/components/AllBologPagass/DomineNameBolog/DomineNameBolog.tsx";
 import BestHostineCompineaBolog from "@/components/AllBologPagass/BestHostineCompineaBolog/BestHostineCompineaBolog.tsx";
+import BoloingeSiteBolog from "@/components/AllBologPagass/BoloingeSiteBolog/BoloingeSiteBolog.tsx";
 
 
 
@@ -149,6 +150,10 @@ const router = createBrowserRouter([
       {
         path: "/BestHostineCompineaBolog",
         Component: BestHostineCompineaBolog,
+      },
+      {
+        path: "/BoloingeSiteBolog",
+        Component: BoloingeSiteBolog,
       },
     ],
   },

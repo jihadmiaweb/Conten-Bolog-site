@@ -9,7 +9,7 @@ const ContentMarketingLiftSite = () => {
                 <div className="w-full pb-4">
                     <img
                         className="w-full h-auto rounded-lg object-cover cursor-pointer sm:h-64 md:h-80 transition-transform px-3 duration-300 md:hover:scale-105"
-                        src="/imgas/Home-imgas/9.jpg"
+                        src="/imgas/Home-imgas/1.jpg"
                         alt="Product Image"
                     />
                 </div>

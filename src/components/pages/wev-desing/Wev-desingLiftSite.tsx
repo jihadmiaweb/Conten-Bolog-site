@@ -1,8 +1,7 @@
 
-
-
 import { Link } from "react-router-dom";
 
+// 1. FIX: Add 'to' to the IProduct interface (it's used in the data and component)
 export interface IProduct {
     id: number;
     name: string;
@@ -11,92 +10,91 @@ export interface IProduct {
     rating: number;
     price: number;
     description: string;
-
-
+    to: string; // Made 'to' mandatory since all items have it
 }
 
 
 const product: IProduct[] = [
 
+    // 2. FIX: Updated IDs to be unique for each item (1 through 7)
     {
-
         id: 1,
         to: "/DomoinHoistanBolog",
         name: "ডোমেইন ও হোস্টিং এর মধ্যে পার্থক্য সমূহ",
-        category: "ওয়েবসাইট ডিজাইন",
+        category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/1.jpg",
         rating: 3,
         price: 59.99,
-        description: "ডোমেইন ও হোস্টিং এর মধ্যে পার্থক্য সম্পর্কে জানাটা একটি সফল ওয়েবসাইট তৈরির প্রথম পদক্ষেপ। বিস্তারিত পড়ুন."
+        description: "ডোমেইন ও হোস্টিং এর মধ্যে পার্থক্য সম্পর্কে জানাটা একটি সফল ওয়েবসাইট তৈরির প্রথম পদক্ষেপ। বিস্তারিত পড়ুন."
 
     },
     {
-        id: 1,
+        id: 2,
         to: "/WevDigintBolog",
         name: "ডোমেইন কি? ডোমেইন এর কাজ কি?",
-        category: "ওয়েবসাইট ডিজাইন",
+        category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/2.jpg",
         rating: 3,
         price: 59.99,
-        description: "ডোমেইন কি? ডোমেইন এর কাজ কি?—ইন্টারনেটের জগতে ওয়েবসাইট তৈরির জন্য ডোমেইন একটি অপরিহার্য উপাদান। বিস্তারিত পড়ুন."
+        description: "ডোমেইন কি? ডোমেইন এর কাজ কি?—ইন্টারনেটের জগতে ওয়েবসাইট তৈরির জন্য ডোমেইন একটি অপরিহার্য উপাদান। বিস্তারিত পড়ুন."
 
     },
     {
-
+        // Reordered properties for consistency
+        id: 3,
         to: "/CreateWevSiteBolog",
-        id: 1,
         name: "ওয়েবসাইট কিভাবে তৈরী করতে হয়?",
-        category: "ওয়েবসাইট ডিজাইন",
+        category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/3.jpg",
         rating: 3,
         price: 59.99,
-        description: "ওয়েবসাইট কিভাবে তৈরী করতে হয় এ সম্পর্কে জেনে নিন আপনার নিজের ওয়েবসাইট তৈরির পূর্বে। বিস্তারিত পড়ুন."
+        description: "ওয়েবসাইট কিভাবে তৈরী করতে হয় এ সম্পর্কে জেনে নিন আপনার নিজের ওয়েবসাইট তৈরির পূর্বে। বিস্তারিত পড়ুন."
 
     },
     {
-        id: 1,
+        id: 4,
         to: "/CreatewevsiteitemBolg",
         name: "ওয়েবসাইট তৈরি করতে কি কি লাগে?",
-        category: "ওয়েবসাইট ডিজাইন",
+        category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/4.jpg",
         rating: 3,
         price: 59.99,
-        description: "ওয়েবসাইট তৈরি করতে কি কি লাগে এ সম্পর্কে জেনে নিজের ওয়েবসাইট তৈরীর পরিকল্পনা করুন। বিস্তারিত পড়ুন."
+        description: "ওয়েবসাইট তৈরি করতে কি কি লাগে এ সম্পর্কে জেনে নিজের ওয়েবসাইট তৈরীর পরিকল্পনা করুন। বিস্তারিত পড়ুন."
 
     },
     {
-        id: 1,
+        id: 5,
         to: "/DomineNameBolog",
         name: "ডোমেইন নেম রেজিস্ট্রেশন করতে হয় কেন?",
-        category: "ওয়েবসাইট ডিজাইন",
+        category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/5.jpg",
         rating: 3,
         price: 59.99,
-        description: "ডোমেইন নেম রেজিস্ট্রেশন করতে হয় কেন এ সম্পর্কে জেনে নিজের ব্যাবসার জন্য সঠিক সিদ্ধান্ত নিন। বিস্তারিত পড়ুন."
+        description: "ডোমেইন নেম রেজিস্ট্রেশন করতে হয় কেন এ সম্পর্কে জেনে নিজের ব্যাবসার জন্য সঠিক সিদ্ধান্ত নিন। বিস্তারিত পড়ুন."
 
     },
     {
-        id: 1,
+        id: 6,
         to: "/BestHostineCompineaBolog",
         name: "বাংলাদেশের সেরা হোস্টিং কোম্পানি সমূহ",
-        category: "ওয়েবসাইট ডিজাইন",
+        category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/6.jpg",
         rating: 3,
         price: 59.99,
-        description: "বাংলাদেশের সেরা হোস্টিং কোম্পানি গুলো সম্পর্কে জেনে আমাদের সাইটের ভালো প্রোভাইডার নির্বাচন করতে পারি। বিস্তারিত পড়ুন."
+        description: "বাংলাদেশের সেরা হোস্টিং কোম্পানি গুলো সম্পর্কে জেনে আমাদের সাইটের ভালো প্রোভাইডার নির্বাচন করতে পারি। বিস্তারিত পড়ুন."
 
     },
     {
-        id: 1,
+        id: 7,
+        to: "/BoloingeSiteBolog",
         name: "ব্লগ সাইট কি? ব্লগ সাইট খোলার নিয়ম",
-        category: "ওয়েবসাইট ডিজাইন",
+        category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/7.jpg",
         rating: 3,
         price: 59.99,
-        description: "ব্লগ সাইট খোলার নিয়ম জেনে নিজের জন্য খুব সহজেই ব্লগ ওয়েবসাইট তৈরী করুন। বিস্তারিত পড়ুন."
+        description: "ব্লগ সাইট খোলার নিয়ম জেনে নিজের জন্য খুব সহজেই ব্লগ ওয়েবসাইট তৈরী করুন। বিস্তারিত পড়ুন."
 
     },
-
 ];
 
 
@@ -109,17 +107,17 @@ function WevdesingLiftSite() {
             <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">ওয়েবসাইট ডিজাইন</h1>
 
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  xl:grid-cols-4 sm:gap-3 md:gap-6 pt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 sm:gap-3 md:gap-6 pt-8">
 
-                {product.map((item, index) => (
+                {product.map((item) => (
 
-                    <div key={index} className="flex flex-col items-center">
-
+                    // 3. FIX: Changed key from 'index' to the unique 'item.id'
+                    <div key={item.id} className="flex flex-col items-center">
 
 
                         <div className="w-full overflow-hidden shadow-md transition-shadow duration-300 hover:shadow-xl">
 
-                            <Link to={item.to || "#"}>
+                            <Link to={item.to}>
                                 <img
                                     className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03]"
                                     src={item.image}
@@ -132,7 +130,7 @@ function WevdesingLiftSite() {
                         <div className="pt-4 w-full">
                             <span className="text-sm font-medium text-[#FF4500]">{item.category}</span>
 
-                            <Link to={item.to || "#"}>
+                            <Link to={item.to}>
                                 <h1 className="cursor-pointer text-xl sm:text-2xl font-bold leading-9 pt-2 pb-2 text-black hover:text-[#FF4500] transition duration-200">
                                     {item.name}
                                 </h1>
@@ -150,6 +148,3 @@ function WevdesingLiftSite() {
 }
 
 export default WevdesingLiftSite;
-
-
-
