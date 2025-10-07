@@ -1,32 +1,7 @@
 
-// import { product } from "@/components/data/data";
 
 
 import { Link } from "react-router-dom";
-
-// import WevdesginItem from "@/components/pages/wev-desing/WevdisginItem";
-
-// function WevdesingLiftSite() {
-//     return (
-//         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 ">
-//             <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">ওয়েবসাইট ডিজাইন</h1>
-//             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm:gap-3  md:gap-6">
-//                 {product.map((item) => (
-//                     <WevdesginItem key={item.id} item={item} />
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default WevdesingLiftSite;
-
-
-
-
-
-
-
 
 export interface IProduct {
     id: number;
@@ -57,6 +32,7 @@ const product: IProduct[] = [
     },
     {
         id: 1,
+        to: "/WevDigintBolog",
         name: "ডোমেইন কি? ডোমেইন এর কাজ কি?",
         category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/2.jpg",
@@ -66,6 +42,8 @@ const product: IProduct[] = [
 
     },
     {
+
+        to: "/CreateWevSiteBolog",
         id: 1,
         name: "ওয়েবসাইট কিভাবে তৈরী করতে হয়?",
         category: "ওয়েবসাইট ডিজাইন",
@@ -77,6 +55,7 @@ const product: IProduct[] = [
     },
     {
         id: 1,
+        to: "/CreatewevsiteitemBolg",
         name: "ওয়েবসাইট তৈরি করতে কি কি লাগে?",
         category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/4.jpg",
@@ -87,6 +66,7 @@ const product: IProduct[] = [
     },
     {
         id: 1,
+        to: "/DomineNameBolog",
         name: "ডোমেইন নেম রেজিস্ট্রেশন করতে হয় কেন?",
         category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/5.jpg",
@@ -97,6 +77,7 @@ const product: IProduct[] = [
     },
     {
         id: 1,
+        to: "/BestHostineCompineaBolog",
         name: "বাংলাদেশের সেরা হোস্টিং কোম্পানি সমূহ",
         category: "ওয়েবসাইট ডিজাইন",
         image: "imgas/wev-site-imgas/6.jpg",
@@ -172,47 +153,3 @@ export default WevdesingLiftSite;
 
 
 
-// function WevdesingLiftSite() {
-
-
-
-//     return (
-//         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 ">
-//             <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">ওয়েবসাইট ডিজাইন</h1>
-
-
-//             <>
-//                 {product.map((item) => (
-
-//                     <div key={item.id} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm:gap-3 md:gap-6">
-//                         <div className="w-full max-w-[320px] overflow-hidden  shadow-md transition-shadow duration-300 hover:shadow-xl">
-//                             <Link to={item.to}>
-//                                 <img
-//                                     className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03]"
-//                                     src={item.image}
-//                                     alt={`Image for ${item.description}`}
-//                                 />
-//                             </Link>
-//                         </div>
-//                         <div className="pt-4 w-full max-w-[320px]">
-//                             {item.category}
-
-//                             <Link to={item.to}>
-//                                 <h1 className="cursor-pointer text-xl sm:text-2xl font-bold leading-9 pt-2 pb-2 text-black hover:text-[#FF4500] transition duration-200">
-//                                     {item.name}
-//                                 </h1>
-//                             </Link>
-
-//                             <p className="text-[14px] pt-1 leading-[26px] text-gray-600">
-//                                 {item. description}
-//                             </p>
-//                         </div>
-
-//                     </div>
-//                 ))}
-//             </>
-//         </div>
-//     );
-// }
-
-// export default WevdesingLiftSite;

@@ -15,19 +15,23 @@ import graphicsdesigning from "@/components/pages/GrifenDigen/graphicsdesigning.
 import Aboutme from "@/components/pages/AboutME/Aboutme.tsx";
 import policyContent from "@/components/pages/policyContent/policyContent.tsx";
 import Contact from "@/components/pages/contact/Contact.tsx";
-import ContentBlog from "@/components/HomeBolog/bologing/bologPagas.tsx";
-import ContentMarketing from "@/components/HomeBolog/Content Marketing/Content Marketing.tsx";
-import SeoBolog from "@/components/HomeBolog/seo/seobolog.tsx";
-
-
-import FreelancingBolog from "@/components/HomeBolog/ফ্রিল্যান্সিং/ফ্রিল্যান্সিংBolog.tsx";
-
+import OnlinePodateBologe from "@/components/HomeBolog/OnlinePordate/OnlinePodqate.tsx";
+import MarketingBolog from "@/components/HomeBolog/MarketingBolog/MarketingBolog.tsx";
+import DomoinHoistanBolog from "@/components/HomeBolog/domoinHoistanBolog/DomoinHoistanBolog.tsx";
+import Midieamirkiten from "@/components/HomeBolog/midieaMIrkeden/MidieaMirkiten.tsx";
 import Businessidea from "@/components/HomeBolog/ব্যবসার আইডিয়াbolog/ব্যবসার আইডিয়াBolog.tsx";
 import MobillincomeBolog from "@/components/HomeBolog/মোবাইল দিয়ে ফ্রিল্যান্সিং/মোবাইল দিয়ে ফ্রিল্যান্সিংBolog.tsx";
-import Midieamirkiten from "@/components/HomeBolog/midieaMIrkeden/MidieaMirkiten.tsx";
-import DomoinHoistanBolog from "@/components/HomeBolog/domoinHoistanBolog/DomoinHoistanBolog.tsx";
-import MarketingBolog from "@/components/HomeBolog/MarketingBolog/MarketingBolog.tsx";
-import OnlinePodateBologe from "@/components/HomeBolog/OnlinePordate/OnlinePodqate.tsx";
+import FreelancingBolog from "@/components/HomeBolog/ফ্রিল্যান্সিং/ফ্রিল্যান্সিংBolog.tsx";
+import SeoBolog from "@/components/HomeBolog/seo/seobolog.tsx";
+import ContentMarketing from "@/components/HomeBolog/Content Marketing/Content Marketing.tsx";
+import ContentBlog from "@/components/HomeBolog/bologing/bologPagas.tsx";
+import WevDigintBolog from "@/components/AllBologPagass/wevDigineBolog/WevDigint Bolog.tsx";
+import CreateWevSiteBolog from "@/components/AllBologPagass/createwevsitebolog/CreateWevSiteBolog.tsx";
+import CreatewevsiteitemBolg from "@/components/AllBologPagass/createwevsiteitemBolg/createwevsiteitemBolg.tsx";
+import DomineNameBolog from "@/components/AllBologPagass/DomineNameBolog/DomineNameBolog.tsx";
+import BestHostineCompineaBolog from "@/components/AllBologPagass/BestHostineCompineaBolog/BestHostineCompineaBolog.tsx";
+
+
 
 
 
@@ -69,7 +73,9 @@ const router = createBrowserRouter([
       {
         path: "/গ্রাফিক্স ডিজাইন",
         Component: graphicsdesigning,
+
       },
+      // homebolog
       {
         path: "/আমার সম্পর্কে",
         Component: Aboutme,
@@ -122,6 +128,27 @@ const router = createBrowserRouter([
       {
         path: "/OnlinePodateBologe",
         Component: OnlinePodateBologe,
+      },
+      // wev-Digien bolog
+      {
+        path: "/WevDigintBolog",
+        Component: WevDigintBolog,
+      },
+      {
+        path: "/CreateWevSiteBolog",
+        Component: CreateWevSiteBolog,
+      },
+      {
+        path: "/CreatewevsiteitemBolg",
+        Component: CreatewevsiteitemBolg,
+      },
+      {
+        path: "/DomineNameBolog",
+        Component: DomineNameBolog,
+      },
+      {
+        path: "/BestHostineCompineaBolog",
+        Component: BestHostineCompineaBolog,
       },
     ],
   },

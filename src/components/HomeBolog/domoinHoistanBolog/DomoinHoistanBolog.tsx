@@ -80,7 +80,7 @@ function DomoinHoistanBolog() {
                             হোম
                         </Link>
                         <span className="mx-2">|</span>
-                        <Link to="/অনলাইন ইনকাম" className="text-blue-600 hover:text-blue-800 transition duration-300 font-semibold">
+                        <Link to="/ওয়েবসাইট ডিজাইন" className="text-blue-600 hover:text-blue-800 transition duration-300 font-semibold">
                             ওয়েবসাইট ডিজাইন
                         </Link>
                     </span>
