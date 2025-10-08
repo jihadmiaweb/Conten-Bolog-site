@@ -36,7 +36,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 3,
-        to: "/",
+        to: "/SeoWorkingBolog",
         name: "SEO এর কাজ শেখার উপায় সমূহ",
         category: "এসইও",
         image: "imgas/sou-imgas/3.jpg",
@@ -46,7 +46,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 4,
-        to: "/",
+        to: "/KeywordRicercBolog",
         name: "কিওয়ার্ড রিসার্চ কি?",
         category: "এসইও",
         image: "imgas/sou-imgas/4.jpg",
@@ -56,7 +56,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 5,
-        to: "/",
+        to: "/LokilSeoBolog",
         name: "লোকাল এসইও কি? লোকাল এসইও কেন গুরুত্বপূর্ণ?",
         category: "এসইও",
         image: "imgas/sou-imgas/5.jpg",
@@ -121,23 +121,22 @@ function SeoLiftSite() {
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 ">
             <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">এসইও</h1>
 
-            {/* 2. FIX: Move the grid container OUTSIDE the map function */}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm:gap-3 md:gap-6">
                 {bolog.map((ite) => (
-                    // 3. FIX: Removed unnecessary wrapper div and only kept the item container
-                    // Also fixed: key should be on the mapped element, so removed the key from the inner div.
+
                     <div key={ite.id} className="pt-5 ">
                         <Link to={ite.to || "#"}>
-                            <div className="md:w-[320px] sm-w-[320px] ">
-                                {/* It's good practice to use the item name as alt text */}
-                                <img className="cursor-pointer" src={ite.image} alt={ite.name} />
+                            <div className="md:w-[320px] w-full max-w-[320px] overflow-hidden  shadow-md transition-shadow duration-300 hover:shadow-xl sm-w-[320px] ">
+
+                                <img className="cursor-pointer  w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03]" src={ite.image} alt={ite.name} />
                             </div>
                         </Link>
                         <div className="pt-4">
-                            {/* You might also want to wrap the category span in a Link */}
+
                             <span className="text-[10px] cursor-pointer text-[#FF4500] font-bold">{ite.category}</span>
                             <Link to={ite.to || "#"}>
-                                {/* Ensured h1 is wrapped in Link for full clickable title */}
+
                                 <h1 className="cursor-pointer text-2xl w-[300px] md:text-2xl font-bold leading-[40px] pt-2 pb-2 text-black hover:text-[#FF4500]">{ite.name}</h1>
                             </Link>
                             <p className=" text-[14px] w-[300px] pt-1 leading-[26px]">{ite.description}</p>

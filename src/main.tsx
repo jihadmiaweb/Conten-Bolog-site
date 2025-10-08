@@ -31,6 +31,9 @@ import CreatewevsiteitemBolg from "@/components/AllBologPagass/createwevsiteitem
 import DomineNameBolog from "@/components/AllBologPagass/DomineNameBolog/DomineNameBolog.tsx";
 import BestHostineCompineaBolog from "@/components/AllBologPagass/BestHostineCompineaBolog/BestHostineCompineaBolog.tsx";
 import BoloingeSiteBolog from "@/components/AllBologPagass/BoloingeSiteBolog/BoloingeSiteBolog.tsx";
+import SeoWorkingBolog from "@/components/AllBologPagass/SeoWorkingBolog/SeoWorkingBolog.tsx";
+import KeywordRicercBolog from "@/components/AllBologPagass/KeywordRicercBolog/KeywordRicercBolog.tsx";
+import LokilSeoBolog from "@/components/AllBologPagass/LokilSeoBolog/LokilSeoBolog.tsx";
 
 
 
@@ -154,6 +157,20 @@ const router = createBrowserRouter([
       {
         path: "/BoloingeSiteBolog",
         Component: BoloingeSiteBolog,
+      },
+
+      // seo bolog ruter
+      {
+        path: "/SeoWorkingBolog",
+        Component: SeoWorkingBolog,
+      },
+      {
+        path: "/KeywordRicercBolog",
+        Component: KeywordRicercBolog,
+      },
+      {
+        path: "/LokilSeoBolog",
+        Component: LokilSeoBolog,
       },
     ],
   },
