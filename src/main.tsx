@@ -198,6 +198,9 @@ const router = createBrowserRouter([
         path: "/SeoImasBolog",
         Component: SeoImasBolog,
       },
+
+      // bolong router
+
     ],
   },
 ]);
