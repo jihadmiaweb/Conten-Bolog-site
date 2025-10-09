@@ -34,6 +34,11 @@ import BoloingeSiteBolog from "@/components/AllBologPagass/BoloingeSiteBolog/Bol
 import SeoWorkingBolog from "@/components/AllBologPagass/SeoWorkingBolog/SeoWorkingBolog.tsx";
 import KeywordRicercBolog from "@/components/AllBologPagass/KeywordRicercBolog/KeywordRicercBolog.tsx";
 import LokilSeoBolog from "@/components/AllBologPagass/LokilSeoBolog/LokilSeoBolog.tsx";
+import SchemaBolog from "@/components/AllBologPagass/SchemaBolog/SchemaBolog.tsx";
+import DomienAtourteBolog from "@/components/AllBologPagass/DomienAtourteBolog/DomienAtourteBolog.tsx";
+import WevSiteLoding from "@/components/AllBologPagass/WevSiteLoding/WevSiteLoding.tsx";
+import HidenTagBolog from "@/components/AllBologPagass/HidenTagBolog/HidenTagBolog.tsx";
+import SeoImasBolog from "@/components/AllBologPagass/SeoImasBolog/SeoImasBolog.tsx";
 
 
 
@@ -171,6 +176,27 @@ const router = createBrowserRouter([
       {
         path: "/LokilSeoBolog",
         Component: LokilSeoBolog,
+      },
+      {
+        path: "/SchemaBolog",
+        Component: SchemaBolog,
+      },
+      {
+        path: "/DomienAtourteBolog",
+        Component: DomienAtourteBolog,
+      },
+      {
+        path: "/WevSiteLoding",
+        Component: WevSiteLoding,
+      },
+      {
+        path: "/HidenTagBolog",
+        Component: HidenTagBolog,
+      },
+
+      {
+        path: "/SeoImasBolog",
+        Component: SeoImasBolog,
       },
     ],
   },

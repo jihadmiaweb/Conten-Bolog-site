@@ -66,7 +66,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 6,
-        to: "/",
+        to: "/SchemaBolog",
         name: "এসইওতে স্কিমা ব্যবহার করা হয় কেন?",
         category: "এসইও",
         image: "imgas/sou-imgas/6.jpg",
@@ -76,7 +76,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 7,
-        to: "/BoloingeSiteBolog-domain-authority-barano-jay",
+        to: "/DomienAtourteBolog",
         name: "কিভাবে ডোমেইন অথরিটি বাড়ানো যায়?",
         category: "এসইও",
         image: "imgas/sou-imgas/8.jpg",
@@ -86,7 +86,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 8,
-        to: "/BoloingeSiteBolog-website-loading-speed",
+        to: "/WevSiteLoding",
         name: "ওয়েবসাইটের লোডিং স্পিড কেন গুরুত্বপূর্ণ?",
         category: "এসইও",
         image: "imgas/sou-imgas/7.jpg",
@@ -96,7 +96,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 9,
-        to: "/BoloingeSiteBolog-heading-tag-ki",
+        to: "/HidenTagBolog",
         name: "হেডিং ট্যাগ কি? হেডিং ট্যাগ কয়টি ও কি কি?",
         category: "এসইও",
         image: "imgas/sou-imgas/9.jpg",
@@ -106,7 +106,7 @@ const bolog: IProduct[] = [
     },
     {
         id: 10,
-        to: "/BoloingeSiteBolog-image-seo-ki",
+        to: "/SeoImasBolog",
         name: "ইমেজ এসইও কি? ইমেজ এসইও কেন গুরুত্বপূর্ণ?",
         category: "এসইও",
         image: "imgas/sou-imgas/10.jpg",
