@@ -3,8 +3,8 @@ import type { IProduct } from "@/components/data/data";
 function EBusinessItem({ item }: { item: IProduct }) {
     return (
         <div className="pt-5 ">
-            <div className="md:w-[320px]  sm-w-[320px] ">
-                <img className="cursor-pointer" src={item.image} alt="" />
+            <div className="w-full max-w-[320px] overflow-hidden shadow-md transition-shadow duration-300 hover:shadow-xl  ">
+                <img className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03]" src={item.image} alt="" />
             </div>
             <div className="pt-4">
                 <span className="text-[10px] cursor-pointer text-[#FF4500] font-bold">{item.category}</span>

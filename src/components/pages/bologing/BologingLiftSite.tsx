@@ -40,7 +40,7 @@ const bloging: IProduct[] = [
 
     {
         id: 3,
-        to: "/",
+        to: "/Contenloungouse",
         name: "কন্টেন্ট কোন ভাষায় লিখতে হয়?",
         category: "ব্লগিং",
         image: "imgas/bloging-images/3.jpg",

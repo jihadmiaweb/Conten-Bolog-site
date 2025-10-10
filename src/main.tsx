@@ -39,6 +39,7 @@ import DomienAtourteBolog from "@/components/AllBologPagass/DomienAtourteBolog/D
 import WevSiteLoding from "@/components/AllBologPagass/WevSiteLoding/WevSiteLoding.tsx";
 import HidenTagBolog from "@/components/AllBologPagass/HidenTagBolog/HidenTagBolog.tsx";
 import SeoImasBolog from "@/components/AllBologPagass/SeoImasBolog/SeoImasBolog.tsx";
+import Contenloungouse from "@/components/AllBologPagass/Contenloungouse/Contenloungouse.tsx";
 
 
 
@@ -200,6 +201,11 @@ const router = createBrowserRouter([
       },
 
       // bolong router
+      {
+        path: "/Contenloungouse",
+        Component: Contenloungouse,
+      },
+
 
     ],
   },
