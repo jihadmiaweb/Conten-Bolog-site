@@ -40,6 +40,12 @@ import WevSiteLoding from "@/components/AllBologPagass/WevSiteLoding/WevSiteLodi
 import HidenTagBolog from "@/components/AllBologPagass/HidenTagBolog/HidenTagBolog.tsx";
 import SeoImasBolog from "@/components/AllBologPagass/SeoImasBolog/SeoImasBolog.tsx";
 import Contenloungouse from "@/components/AllBologPagass/Contenloungouse/Contenloungouse.tsx";
+import ContenWriting from "@/components/AllBologPagass/contenWriting/ContenWriting.tsx";
+import WhatcontenWriten from "@/components/AllBologPagass/whatcontenWriten/whatcontenWriten.tsx";
+import ContentypeBolog from "@/components/AllBologPagass/ContentypeBolog/ContentypeBolog.tsx";
+import ContenBolog from "@/components/AllBologPagass/ContenBolog/ContenBolog.tsx";
+import BanglaAritakelBolog from "@/components/AllBologPagass/BanglaAritakelBolog/BanglaAritakelBolog.tsx";
+import NiseContenBolog from "@/components/AllBologPagass/NiseContenBolog/NiseContenBolog.tsx";
 
 
 
@@ -205,6 +211,37 @@ const router = createBrowserRouter([
         path: "/Contenloungouse",
         Component: Contenloungouse,
       },
+
+      {
+        path: "/ContenWriting",
+        Component: ContenWriting,
+      },
+
+      {
+        path: "/WhatcontenWriten",
+        Component: WhatcontenWriten,
+      },
+
+      {
+        path: "/ContentypeBolog",
+        Component: ContentypeBolog,
+      },
+      {
+        path: "/ContenBolog",
+        Component: ContenBolog,
+      },
+      {
+        path: "/BanglaAritakelBolog",
+        Component: BanglaAritakelBolog,
+      },
+      {
+        path: "/NiseContenBolog",
+        Component: NiseContenBolog,
+      },
+
+      // E business router
+
+
 
 
     ],

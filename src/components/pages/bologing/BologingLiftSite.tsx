@@ -52,7 +52,7 @@ const bloging: IProduct[] = [
 
     {
         id: 4,
-        to: "/",
+        to: "/ContenWriting",
         name: "কন্টেন্ট রাইটিং শেখার উপায় সমূহ",
         category: "ব্লগিং",
         image: "imgas/bloging-images/4.jpg",
@@ -64,7 +64,7 @@ const bloging: IProduct[] = [
 
     {
         id: 5,
-        to: "/",
+        to: "/WhatcontenWriten",
         name: "কনটেন্ট রাইটিং কি?",
         category: "ব্লগিং",
         image: "imgas/bloging-images/5.jpg",
@@ -76,7 +76,7 @@ const bloging: IProduct[] = [
 
     {
         id: 6,
-        to: "/",
+        to: "/ContentypeBolog",
         name: "কনটেন্ট টাইপ গুলো কি কি?",
         category: "ব্লগিং",
         image: "imgas/bloging-images/6.jpg",
@@ -88,7 +88,7 @@ const bloging: IProduct[] = [
 
     {
         id: 7,
-        to: "/",
+        to: "/ContenBolog",
         name: "কন্টেন্ট রাইটিং কত প্রকার ও কি কি?",
         category: "ব্লগিং",
         image: "imgas/bloging-images/7.jpg",
@@ -100,7 +100,7 @@ const bloging: IProduct[] = [
 
     {
         id: 8,
-        to: "/",
+        to: "/BanglaAritakelBolog",
         name: "বাংলা আর্টিকেল লেখার নিয়ম সমূহ",
         category: "ব্লগিং",
         image: "imgas/bloging-images/8.jpg",
@@ -112,7 +112,7 @@ const bloging: IProduct[] = [
 
     {
         id: 9,
-        to: "/",
+        to: "/NiseContenBolog",
         name: "নিশ কি? নিশ কেন গুরুত্বপূর্ণ?",
         category: "ব্লগিং",
         image: "imgas/bloging-images/9.jpg",

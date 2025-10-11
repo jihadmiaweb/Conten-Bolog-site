@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-function ContenWriting() {
+function WhatcontenWriten() {
     // 1. Initialize state for the comment form
     const [commentData, setCommentData] = useState({
         name: "",
@@ -69,7 +69,7 @@ function ContenWriting() {
                             hover:shadow-2xl
                             hover:scale-[1.02]
                         "
-                            src=" imgas/bloging-images/4.jpg"
+                            src=" imgas/bloging-images/5.jpg"
                             alt="SEO, Search Engine Optimization"
                         />
                     </div>
@@ -396,4 +396,4 @@ function ContenWriting() {
     );
 }
 
-export default ContenWriting;
+export default WhatcontenWriten;
