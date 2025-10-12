@@ -1,7 +1,6 @@
-
 import { Link } from "react-router-dom";
 
-// 1. FIX: Add 'to' to the IProduct interface (it's used in the data and component)
+// 1. IProduct Interface: 'to' is mandatory
 export interface IProduct {
     id: number;
     name: string;
@@ -10,13 +9,12 @@ export interface IProduct {
     rating: number;
     price: number;
     description: string;
-    to: string; // Made 'to' mandatory since all items have it
+    to: string; // Mandatory since all items have it
 }
 
 
 const product: IProduct[] = [
-
-    // 2. FIX: Updated IDs to be unique for each item (1 through 7)
+    // IDs are unique (1 through 7)
     {
         id: 1,
         to: "/DomoinHoistanBolog",
@@ -40,7 +38,6 @@ const product: IProduct[] = [
 
     },
     {
-        // Reordered properties for consistency
         id: 3,
         to: "/CreateWevSiteBolog",
         name: "ওয়েবসাইট কিভাবে তৈরী করতে হয়?",
@@ -104,22 +101,22 @@ function WevdesingLiftSite() {
 
     return (
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 ">
-            <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">ওয়েবসাইট ডিজাইন</h1>
+            <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent mb-6">ওয়েবসাইট ডিজাইন</h1>
 
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  sm:gap-3 md:gap-6 pt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 sm:gap-8 pt-4">
 
                 {product.map((item) => (
 
-                    // 3. FIX: Changed key from 'index' to the unique 'item.id'
-                    <div key={item.id} className="flex flex-col items-center">
+                    <div key={item.id} className="pt-5">
 
 
-                        <div className="w-full overflow-hidden shadow-md transition-shadow duration-300 hover:shadow-xl">
+                        <div className="w-full overflow-hidden shadow-md transition-shadow duration-300 hover:shadow-xl rounded-lg">
 
                             <Link to={item.to}>
                                 <img
-                                    className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03]"
+
+                                    className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03] aspect-video"
                                     src={item.image}
                                     alt={`Image for ${item.name}`}
                                 />
@@ -127,16 +124,20 @@ function WevdesingLiftSite() {
                         </div>
 
 
+
                         <div className="pt-4 w-full">
-                            <span className="text-sm font-medium text-[#FF4500]">{item.category}</span>
+
+                            <span className="text-[10px] font-bold text-[#FF4500] uppercase">{item.category}</span>
 
                             <Link to={item.to}>
-                                <h1 className="cursor-pointer text-xl sm:text-2xl font-bold leading-9 pt-2 pb-2 text-black hover:text-[#FF4500] transition duration-200">
+                                {/* Ensured text uses w-full and adjusted leading for better readability */}
+                                <h1 className="cursor-pointer text-xl sm:text-2xl font-bold leading-normal pt-2 pb-2 text-black hover:text-[#FF4500] transition duration-200 w-full">
                                     {item.name}
                                 </h1>
                             </Link>
 
-                            <p className="text-[14px] pt-1 leading-[26px] text-gray-600">
+                            {/* Ensured text uses w-full and used leading-relaxed */}
+                            <p className="text-[14px] pt-1 leading-relaxed text-gray-600 w-full">
                                 {item.description}
                             </p>
                         </div>

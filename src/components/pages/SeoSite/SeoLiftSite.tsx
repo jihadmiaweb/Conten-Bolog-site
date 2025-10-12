@@ -1,3 +1,9 @@
+
+
+
+
+
+
 import { Link } from "react-router-dom";
 
 // 1. FIX: Add 'to' to the IProduct interface (optional property for better flexibility)
@@ -119,27 +125,38 @@ const bolog: IProduct[] = [
 function SeoLiftSite() {
     return (
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 ">
-            <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">এসইও</h1>
+            <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent mb-6">এসইও</h1>
 
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm:gap-3 md:gap-6">
+            {/*
+                GRID LAYOUT:
+                Mobile (default): 1 Column
+                sm (640px+): 2 Columns
+                md (768px+): 3 Columns (Added for better desktop layout)
+            */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                 {bolog.map((ite) => (
 
                     <div key={ite.id} className="pt-5 ">
-                        <Link to={ite.to || "#"}>
-                            <div className="md:w-[320px] w-full max-w-[320px] overflow-hidden  shadow-md transition-shadow duration-300 hover:shadow-xl sm-w-[320px] ">
+                        <Link to={ite.to || "#"} className="block"> {/* Added block for full link area */}
+                            <div className="w-full overflow-hidden shadow-md transition-shadow duration-300 hover:shadow-xl rounded-lg"> {/* Removed fixed width, using w-full */}
 
-                                <img className="cursor-pointer  w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03]" src={ite.image} alt={ite.name} />
+                                <img
+                                    className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03] aspect-video"
+                                    src={ite.image}
+                                    alt={ite.name}
+                                /> {/* Added aspect-video for consistent image height */}
                             </div>
                         </Link>
                         <div className="pt-4">
 
-                            <span className="text-[10px] cursor-pointer text-[#FF4500] font-bold">{ite.category}</span>
+                            <span className="text-[10px] cursor-pointer text-[#FF4500] font-bold uppercase">{ite.category}</span>
                             <Link to={ite.to || "#"}>
 
-                                <h1 className="cursor-pointer text-2xl w-[300px] md:text-2xl font-bold leading-[40px] pt-2 pb-2 text-black hover:text-[#FF4500]">{ite.name}</h1>
+                                {/* Adjusted title width to w-full and made text size more flexible */}
+                                <h1 className="cursor-pointer text-xl sm:text-2xl font-bold leading-normal pt-2 pb-2 text-black hover:text-[#FF4500]">{ite.name}</h1>
                             </Link>
-                            <p className=" text-[14px] w-[300px] pt-1 leading-[26px]">{ite.description}</p>
+                            {/* Adjusted paragraph width to w-full */}
+                            <p className="text-[14px] w-full pt-1 leading-relaxed">{ite.description}</p>
                         </div>
                     </div>
                 ))}

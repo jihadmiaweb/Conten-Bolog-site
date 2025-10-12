@@ -51,6 +51,7 @@ import NiseContenBolog from "@/components/AllBologPagass/NiseContenBolog/NiseCon
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -238,6 +239,8 @@ const router = createBrowserRouter([
         path: "/NiseContenBolog",
         Component: NiseContenBolog,
       },
+
+
 
       // E business router
 

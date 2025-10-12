@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -98,7 +95,7 @@ const blogPosts = [
 function LiftSiteHome() {
     // Component to render categories with a separator
     const CategoryLinks = ({ categories }) => (
-        <span className="text-[10px] cursor-pointer text-[#FF4500] font-bold">
+        <span className="text-[10px] cursor-pointer text-[#FF4500] font-bold uppercase">
             {categories.map((cats, catIndexs) => (
                 <React.Fragment key={cats.link}>
                     {catIndexs > 0 && " | "}
@@ -109,34 +106,40 @@ function LiftSiteHome() {
     );
 
     return (
-        <div className="w-full max-w-[1440px] mx-auto px-2 sm:px-6 md:px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  sm:gap-6 md:gap-8">
-                {/* 3. Map over the blogPosts array to render each item */}
-                {blogPosts.map((post) => (
-                    <div key={post.id} className="pt-5 flex flex-col items-center sm:items-start  sm:text-left">
+        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8">
 
-                        {/* Image Container */}
-                        <div className="w-full max-w-[320px] overflow-hidden  shadow-md transition-shadow duration-300 hover:shadow-xl">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+
+                {blogPosts.map((post) => (
+
+                    <div key={post.id} className="pt-5">
+
+
+                        <div className="w-full overflow-hidden shadow-md transition-shadow duration-300 hover:shadow-xl rounded-lg">
                             <Link to={post.to}>
                                 <img
-                                    className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03]"
+
+                                    className="cursor-pointer w-full h-auto object-cover transform transition-transform duration-500 hover:scale-[1.03] aspect-video"
                                     src={post.imgSrc}
                                     alt={`Image for ${post.title}`}
                                 />
                             </Link>
                         </div>
 
-                        {/* Content Container */}
-                        <div className="pt-4 w-full max-w-[320px]">
+
+                        <div className="pt-4 w-full">
                             <CategoryLinks categories={post.categories} />
 
                             <Link to={post.to}>
-                                <h1 className="cursor-pointer text-xl sm:text-2xl font-bold leading-9 pt-2 pb-2 text-black hover:text-[#FF4500] transition duration-200">
+
+                                <h1 className="cursor-pointer text-xl sm:text-2xl font-bold leading-normal pt-2 pb-2 text-black hover:text-[#FF4500] transition duration-200 w-full">
                                     {post.title}
                                 </h1>
                             </Link>
 
-                            <p className="text-[14px] pt-1 leading-[26px] text-gray-600">
+
+                            <p className="text-[14px] pt-1 leading-relaxed text-gray-600 w-full">
                                 {post.excerpt}
                             </p>
                         </div>
